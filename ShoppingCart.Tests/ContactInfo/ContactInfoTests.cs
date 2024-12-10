@@ -59,12 +59,12 @@ namespace ShoppingCart.Tests
         [Test]
         public void CorrectEmailFieldValidations_When_FillTooLongEmail()
         {
-            var billingInformation = $"{RandomGenerator.GenerateString(MaxLengthValidations.EmailMaxLength - 7)}@test.com";
-            var licenseHolderInformation = $"{RandomGenerator.GenerateString(MaxLengthValidations.EmailMaxLength - 7)}@test.com";
+            var emailBilling = $"{RandomGenerator.GenerateString(MaxLengthValidations.EmailMaxLength - 7)}@test.com";
+            var emailLicenseHolder = $"{RandomGenerator.GenerateString(MaxLengthValidations.EmailMaxLength - 7)}@test.com";
 
             ContactInfoPage.FillAllFormFields(
-                new BillingInformation { Email = billingInformation },
-                new LicenseHolderInformation { Email = licenseHolderInformation });
+                new BillingInformation { Email = emailBilling },
+                new LicenseHolderInformation { Email = emailLicenseHolder });
 
             var billingInformationUpdated = ContactInfoPage.ExtractBillingInformationFields();
             var licenseHolderInformationUpdated = ContactInfoPage.ExtractLicenseInformationFields();
@@ -89,12 +89,12 @@ namespace ShoppingCart.Tests
         [Test]
         public void CorrectCompanyFieldValidations_When_FillTooLongCompanyName()
         {
-            var billingInformation = RandomGenerator.GenerateString(MaxLengthValidations.CompanyMaxLength + 1);
-            var licenseHolderInformation = RandomGenerator.GenerateString(MaxLengthValidations.CompanyMaxLength + 1);
+            var companyNameBilling = RandomGenerator.GenerateString(MaxLengthValidations.CompanyMaxLength + 1);
+            var companyNameLicenseHolder = RandomGenerator.GenerateString(MaxLengthValidations.CompanyMaxLength + 1);
 
             ContactInfoPage.FillAllFormFields(
-                new BillingInformation { Company = billingInformation },
-                new LicenseHolderInformation { Company = licenseHolderInformation });
+                new BillingInformation { Company = companyNameBilling },
+                new LicenseHolderInformation { Company = companyNameLicenseHolder });
 
             var billingInformationUpdated = ContactInfoPage.ExtractBillingInformationFields();
             var licenseHolderInformationUpdated = ContactInfoPage.ExtractLicenseInformationFields();
