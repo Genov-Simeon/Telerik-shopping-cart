@@ -16,15 +16,4 @@ This project contains automated UI tests for the Telerik online shopping cart us
 ## Running Tests
 1. Open Test Explorer in Visual Studio
 2. Click "Run All" to execute all tests
-
-## Project Structure
-- `Pages/`: Page Object Models
-- `Tests/`: Test classes
-- `Helpers/`: Utility classes
-- `Models/`: Data models
-
-## Dependencies
-- Selenium.WebDriver
-- Selenium.WebDriver.ChromeDriver
-- NUnit
-- FluentAssertions
+ 
