@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;QA;DEV</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
+	  <PackageReference Include="NUnit" Version="3.14.0" />
+	  <PackageReference Include="Selenium.Support" Version="4.27.0" />
+	  <PackageReference Include="Selenium.WebDriver" Version="4.27.0" />
+	  <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="131.0.6778.8700" />
+	  <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+</Project>
