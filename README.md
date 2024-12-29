@@ -1,3 +1,5 @@
+# PROGRESS
+
 # Telerik Shopping Cart Automated Tests
 
 This project contains automated UI tests for the Telerik online shopping cart using Selenium WebDriver and C#.
